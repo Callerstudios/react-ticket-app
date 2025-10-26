@@ -75,3 +75,51 @@ npm install
 ```bash
 npm run dev
 ```
+
+## Running the App
+
+- Open [http://localhost:3000](http://localhost:3000) in your browser
+- Use the **Login** or **Signup** pages to access the dashboard
+- Navigate to the **Ticket Management** page to create, edit, or delete tickets
+
+## UI & State Structure
+
+**Components:**
+
+- **LandingPage.jsx** – Hero section, features, and call-to-action buttons
+- **Login.jsx / Signup.jsx** – Authentication forms with validation and feedback
+- **Dashboard.jsx** – Stats overview of total, open, in-progress, and closed tickets
+- **Tickets.jsx** – Ticket CRUD interface, including modals and toast notifications
+
+**State Management:**
+
+- Local state using `useState` for tickets, form inputs, and modal visibility
+- Session stored in `localStorage` under the key `ticketapp_session`
+
+## Authentication & Protected Routes
+
+- Only authenticated users can access **Dashboard** and **Ticket Management** pages
+- Unauthorized access redirects to `/auth/login`
+- Clicking **Logout** clears the session and redirects to the landing page
+
+## Accessibility Considerations
+
+- Semantic HTML tags used (`<header>`, `<main>`, `<section>`, etc.)
+- Visible focus states for interactive elements
+- Color contrast follows **WCAG standards**
+- Descriptive alt text provided for decorative images
+
+## Test User Credentials
+
+Since authentication is simulated via `localStorage`:
+
+- Signup with any email & password
+- Example test credentials:
+  - **Email:** testuser@example.com
+  - **Password:** password123
+
+## Known Issues
+
+- Tickets are stored in `localStorage`; data will reset if cleared
+- No backend integration yet; authentication is fully simulated
+- Mobile navigation toggle may require minor CSS adjustments
