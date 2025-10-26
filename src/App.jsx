@@ -10,7 +10,7 @@ import Tickets from './pages/Tickets'
 
 function App() {
   return (
-    <body>
+    <div>
       <Header/>
       <Routes>
         <Route path='/' element={<Home/>} />
@@ -20,7 +20,7 @@ function App() {
         <Route path="/tickets" element={<Tickets/>} />
       </Routes>
       <Footer/>
-    </body>
+    </div>
   )
 }
 

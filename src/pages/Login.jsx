@@ -3,14 +3,14 @@ import React from "react";
 const Login = () => {
   return (
     <div>
-      <section class="auth-section">
-        <div class="container auth-container">
-          <div class="auth-box">
+      <section className="auth-section">
+        <div className="container auth-container">
+          <div className="auth-box">
             <h2>Welcome Back</h2>
-            <p class="subtitle">Login to access your dashboard</p>
+            <p className="subtitle">Login to access your dashboard</p>
 
-            <form id="loginForm" class="auth-form">
-              <div class="form-group">
+            <form id="loginForm" className="auth-form">
+              <div className="form-group">
                 <label for="email">Email</label>
                 <input
                   type="email"
@@ -19,10 +19,10 @@ const Login = () => {
                   placeholder="you@example.com"
                   required
                 />
-                <small class="error-message" id="emailError"></small>
+                <small className="error-message" id="emailError"></small>
               </div>
 
-              <div class="form-group">
+              <div className="form-group">
                 <label for="password">Password</label>
                 <input
                   type="password"
@@ -31,21 +31,21 @@ const Login = () => {
                   placeholder="Enter your password"
                   required
                 />
-                <small class="error-message" id="passwordError"></small>
+                <small className="error-message" id="passwordError"></small>
               </div>
 
-              <button type="submit" class="btn primary full">
+              <button type="submit" className="btn primary full">
                 Login
               </button>
             </form>
 
-            <p class="auth-switch">
+            <p className="auth-switch">
               Don’t have an account? <a href="/signup">Sign up</a>
             </p>
           </div>
         </div>
 
-        <div id="toast" class="toast"></div>
+        <div id="toast" className="toast"></div>
       </section>
     </div>
   );
