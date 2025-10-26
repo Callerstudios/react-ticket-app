@@ -164,14 +164,14 @@ const Tickets = () => {
           {tickets.length ? (
             <div className="ticket-grid">
               {tickets.map((ticket) => (
-                <div className="ticket-card" key={ticket.id}>
+                <div className={`ticket-card ${ticket.status}`} key={ticket.id}>
                   <div className="ticket-info">
                     <h3>{ticket.title}</h3>
                     <p>{ticket.description || "No description provided."}</p>
                   </div>
 
                   <div className="ticket-footer">
-                    <span className="status">
+                    <span className={`status ${ticket.status}`}>
                       {ticket.status.replace("_", " ")}
                     </span>
 

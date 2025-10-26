@@ -1,6 +1,7 @@
 import React from "react";
 
 const Login = () => {
+
   return (
     <div>
       <section className="auth-section">
@@ -9,9 +10,9 @@ const Login = () => {
             <h2>Welcome Back</h2>
             <p className="subtitle">Login to access your dashboard</p>
 
-            <form id="loginForm" className="auth-form">
+            <form id="loginForm" className="auth-form" >
               <div className="form-group">
-                <label for="email">Email</label>
+                <label htmlFor="email">Email</label>
                 <input
                   type="email"
                   id="email"
@@ -23,7 +24,7 @@ const Login = () => {
               </div>
 
               <div className="form-group">
-                <label for="password">Password</label>
+                <label htmlFor="password">Password</label>
                 <input
                   type="password"
                   id="password"
