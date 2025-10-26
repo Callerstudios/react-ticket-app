@@ -1,0 +1,54 @@
+import React from "react";
+
+const Login = () => {
+  return (
+    <div>
+      <section class="auth-section">
+        <div class="container auth-container">
+          <div class="auth-box">
+            <h2>Welcome Back</h2>
+            <p class="subtitle">Login to access your dashboard</p>
+
+            <form id="loginForm" class="auth-form">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="you@example.com"
+                  required
+                />
+                <small class="error-message" id="emailError"></small>
+              </div>
+
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder="Enter your password"
+                  required
+                />
+                <small class="error-message" id="passwordError"></small>
+              </div>
+
+              <button type="submit" class="btn primary full">
+                Login
+              </button>
+            </form>
+
+            <p class="auth-switch">
+              Don’t have an account? <a href="/signup">Sign up</a>
+            </p>
+          </div>
+        </div>
+
+        <div id="toast" class="toast"></div>
+      </section>
+    </div>
+  );
+};
+
+export default Login;
