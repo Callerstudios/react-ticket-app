@@ -1,16 +1,77 @@
-# React + Vite
+# TicketApp – React Implementation
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the **React version** of the Multi-Framework Ticket Management Web App, part of the Frontend Stage 2 assignment. The app provides a fully functional ticket system with authentication, dashboard, and CRUD operations for tickets.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of Contents
 
-## React Compiler
+1. [Project Overview](#project-overview)  
+2. [Features](#features)  
+3. [Frameworks & Libraries Used](#frameworks--libraries-used)  
+4. [Setup & Installation](#setup--installation)  
+5. [Running the App](#running-the-app)  
+6. [UI & State Structure](#ui--state-structure)  
+7. [Authentication & Protected Routes](#authentication--protected-routes)  
+8. [Accessibility Considerations](#accessibility-considerations)  
+9. [Test User Credentials](#test-user-credentials)  
+10. [Known Issues](#known-issues)  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Project Overview
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+TicketApp is a **robust ticket management system** built in React. Users can:
+
+- Log in and sign up (simulated via `localStorage` session token)
+- View a dashboard with ticket statistics
+- Manage tickets with full **CRUD** functionality (Create, Read, Update, Delete)
+- Receive **real-time feedback** via inline messages and toast notifications
+
+The layout follows a **consistent design language** used across Vue.js and Twig implementations:
+
+- Wave hero section on landing page
+- Decorative circles and card-style components
+- Max-width of 1440px, fully responsive design
+- Color-coded ticket statuses: Open (Green), In Progress (Amber), Closed (Gray)
+
+---
+
+## Features
+
+- **Landing Page:** Hero section with wave SVG, decorative elements, responsive layout  
+- **Authentication:** Login & Signup forms, validation, and simulated session token  
+- **Dashboard:** Stats overview (Total, Open, In Progress, Closed tickets)  
+- **Ticket Management Screen:** Full CRUD, validation, confirmation prompts, toast notifications  
+- **Responsive Design:** Works across mobile, tablet, and desktop devices  
+- **Accessibility:** Semantic HTML, alt text, visible focus states, sufficient color contrast  
+
+---
+
+## Frameworks & Libraries Used
+
+- **React 18** (Functional components & hooks)  
+- **React Router** (for routing and protected routes)  
+- **LocalStorage** (for authentication simulation and storing tickets)  
+- Optional: CSS or SCSS for styling  
+
+---
+
+## Setup & Installation
+
+1. **Clone the repository**  
+
+```bash
+git clone <your-react-repo-url>
+cd ticketapp-react
+```
+2. **Install dependencies**  
+
+```bash
+npm install
+```
+3. **Start development server**  
+
+```bash
+npm run dev
+```
